@@ -6,5 +6,5 @@ run() {
 
 while true; do
     run 'sensors -j'
-    sleeo 60
+    sleep 60
 done
