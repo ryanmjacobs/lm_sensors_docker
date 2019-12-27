@@ -1,4 +1,3 @@
-FROM ubuntu:19.10
-RUN apt-get -y update
-RUN apt-get -y install lm-sensors
+FROM alpine
+RUN apk add lm_sensors
 CMD ["sensors", "--json"]
