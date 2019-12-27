@@ -4,4 +4,4 @@ run() {
     psql <<< "INSERT INTO acpi_log (host, cmd, content) VALUES ('$HOST', '$cmd', '$content')"
 }
 
-run 'sensors --json'
+run 'sensors -j'
