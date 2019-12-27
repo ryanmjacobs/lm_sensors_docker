@@ -1,4 +1,4 @@
 FROM ubuntu:18.04
-RUN apt-get update
-RUN apt-get install lm-sensors
+RUN apt-get -y update
+RUN apt-get -y install lm-sensors
 CMD ["sensors", "--json"]
