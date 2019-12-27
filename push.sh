@@ -4,4 +4,7 @@ run() {
     psql <<< "INSERT INTO acpi_log (host, cmd, content) VALUES ('$HOST', '$cmd', '$content')"
 }
 
-run 'sensors -j'
+while true; do
+    run 'sensors -j'
+    sleeo 60
+done
