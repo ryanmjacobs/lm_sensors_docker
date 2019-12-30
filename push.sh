@@ -8,6 +8,6 @@ while true; do
     run 'sensors -j'
     run 'cat /proc/loadavg'
     #run 'mpstat -A'
-    run "python -c 'import psutil; print(psutil.cpu_percent(percpu=True, interval=1))'"
+    run "python -c \"import psutil; print(psutil.cpu_percent(percpu=True, interval=1))\""
     sleep 60
 done
