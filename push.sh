@@ -7,6 +7,7 @@ run() {
 while true; do
     run 'sensors -j'
     run 'cat /proc/loadavg'
-    run 'mpstat -A'
+    #run 'mpstat -A'
+    run "python -c 'import psutil; print(psutil.cpu_percent(interval=1))'"
     sleep 60
 done
