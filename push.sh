@@ -7,5 +7,6 @@ run() {
 while true; do
     run 'sensors -j'
     run 'cat /proc/loadavg'
+    run 'mpstat -A'
     sleep 60
 done
